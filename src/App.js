@@ -10,11 +10,19 @@ import bgImg from './assets/img/parallex/background.webp';
 import Skills from "./pages/skills/skills.component";
 import Slide from "react-reveal/Slide";
 import Experience from "./pages/experience/experience.component";
+import TimeLine from "./components/projects-timeline/projects-timeline.component";
+import ContactForm from "./pages/contact-form/contact-form.component";
+import FooterPanel from "./components/footer/footer.component";
+ import Particles from "react-particles-js";
+  import { particlesOptions } from "./particlesOptions";
 import './App.css';
 
 const App = () => {
   return (<div  className="App" style={{ position: "relative" }}> 
     <MyNavbar/>
+    <Particles
+        className="particles particles-box"
+        params={particlesOptions}/> 
     <MyCarousal />
     <TitleMessage/>
     <div>
@@ -45,6 +53,20 @@ const App = () => {
           </Fade>
         </Container>
       </div>
+      <Container className="container-box rounded">
+        <Slide bottom duration={500}>
+          <hr />
+          <TimeLine />
+        </Slide>
+      </Container>
+      <Container className="container-box rounded">
+        <Fade duration={500}>
+          <hr />
+          <ContactForm />
+        </Fade>
+      </Container>
+      <hr />
+      <FooterPanel />
     </div>
     );  
 };
