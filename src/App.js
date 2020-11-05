@@ -9,7 +9,7 @@ import Container from "react-bootstrap/Container";
 import bgImg from './assets/img/parallex/background.webp';
 import Skills from "./pages/skills/skills.component";
 import Slide from "react-reveal/Slide";
-
+import Experience from "./pages/experience/experience.component";
 import './App.css';
 
 const App = () => {
@@ -36,6 +36,15 @@ const App = () => {
           <Skills />
         </Slide>
       </Container>
+      <div>
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+            <hr />
+
+            <Experience />
+          </Fade>
+        </Container>
+      </div>
     </div>
     );  
 };
