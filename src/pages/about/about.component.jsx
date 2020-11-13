@@ -41,6 +41,13 @@ const About = () => {
                     </a>
                   </div>
                   <div>
+                    <a href="https://drive.google.com/file/d/1Q4Wmr9LGX2NCjywqkdP63UBO9oRSL3DL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                      <Button className="m-2" variant="outline-primary">
+                        My Transcript
+                      </Button>
+                    </a>
+                  </div>
+                  <div>
                     <a href="https://github.com/Weerawat-Saothong" target="_blank" rel="noopener noreferrer">
                       <Button className="m-2" variant="outline-dark">
                         GitHub
